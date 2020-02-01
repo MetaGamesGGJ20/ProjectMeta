@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+    public string characterName;
     public int desiredAttackSpeed = 3;
     public int desiredAttackPower = 3;
     public int desiredHealth = 3;
