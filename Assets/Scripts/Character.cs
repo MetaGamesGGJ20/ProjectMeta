@@ -92,4 +92,9 @@ public class Character : MonoBehaviour
     {
         luck = stat;
     }
+
+    public int getTotalScore()
+    {
+        return (attackSpeed + attackPower + health + range + mobility + luck);
+    }
 }
