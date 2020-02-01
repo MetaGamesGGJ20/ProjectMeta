@@ -11,7 +11,7 @@ public class DeliverFeedback : MonoBehaviour
     private string esportsFeedback;
     private int randomString;
 
-    private int randChar;
+    private string randChar;
     private int randAttribute;
     private int randScore;
     private FeedbackCalculations feedbackCalcs;
@@ -42,10 +42,10 @@ public class DeliverFeedback : MonoBehaviour
         randomString = Random.Range(0, 4);
         esportsFeedback = esportsFeedbackList[randomString];
 
-        randChar = Random.Range(0, 4);
-        randAttribute = Random.Range(0, 5);
-        randScore = Random.Range(1, 5);
-
+        //Calculate Sponsor requests
+        feedbackCalcs.sponsorChar = Random.Range(0, 4);
+        feedbackCalcs.sponsorProp = Random.Range(0, 5);
+        feedbackCalcs.sponsorValue = Random.Range(1, 5);
     }
 
     //Update UI

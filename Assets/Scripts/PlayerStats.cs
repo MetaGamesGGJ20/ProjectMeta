@@ -16,11 +16,16 @@ public class PlayerStats : MonoBehaviour
     private int hypePatch;
     private bool sponsorPatch;
     private int funPatch;
-    private bool esportsPatch;
+    private int esportsPatch;
 
     void Start()
     {
         feedbackCalcs = GetComponent<FeedbackCalculations>();
+        setBaseScores();
+    }
+
+    public void setBaseScores()
+    {
         bossScore = 2;
         hypeScore = 2;
         sponsorScore = 2;
@@ -100,13 +105,27 @@ public class PlayerStats : MonoBehaviour
         }
 
         esportsPatch = feedbackCalcs.CheckBalance();
-        if (esportsPatch)
+        if (esportsPatch >= 6)
         {
-            esportsScore++;
+            if (hypePatch > 9)
+            {
+                hypeScore += 2;
+            }
+            else
+            {
+                hypeScore++;
+            }
         }
-        else
+        else if (hypePatch < 5)
         {
-            esportsScore--;
+            if (hypePatch < 1)
+            {
+                hypeScore -= 2;
+            }
+            else
+            {
+                hypeScore--;
+            }
         }
     }
 }
