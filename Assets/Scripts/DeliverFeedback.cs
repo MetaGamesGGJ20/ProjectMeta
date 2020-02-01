@@ -4,20 +4,49 @@ using UnityEngine;
 
 public class DeliverFeedback : MonoBehaviour
 {
-    public string bossFeedback;
-    public string crowdFeedback;
-    public string sponsorFeedback;
-    public string casualFeedback;
-    public string esportsFeedback;
-    // Start is called before the first frame update
-    void Start()
+    private string bossFeedback;
+    private string crowdFeedback;
+    private string sponsorFeedback;
+    private string casualFeedback;
+    private string esportsFeedback;
+    private int randomString;
+
+    private int randChar;
+    private int randAttribute;
+    private int randScore;
+    private FeedbackCalculations feedbackCalcs;
+
+    public string[] bossFeedbackList;
+    public string[] crowdFeedbackList;
+    public string[] casualFeedbackList;
+    public string[] esportsFeedbackList;
+
+    private void Start()
     {
-        
+
+        feedbackCalcs = GetComponent<FeedbackCalculations>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void updateFeedback()
     {
-        
+
+        randomString = Random.Range(0, 4);
+        bossFeedback = bossFeedbackList[randomString];
+
+        randomString = Random.Range(0, 4);
+        crowdFeedback = crowdFeedbackList[randomString];
+
+        randomString = Random.Range(0, 4);
+        casualFeedback = casualFeedbackList[randomString];
+
+        randomString = Random.Range(0, 4);
+        esportsFeedback = esportsFeedbackList[randomString];
+
+        randChar = Random.Range(0, 4);
+        randAttribute = Random.Range(0, 5);
+        randScore = Random.Range(1, 5);
+
     }
+
+    //Update UI
 }
