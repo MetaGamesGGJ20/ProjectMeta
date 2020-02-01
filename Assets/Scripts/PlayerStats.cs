@@ -107,24 +107,24 @@ public class PlayerStats : MonoBehaviour
         esportsPatch = feedbackCalcs.CheckBalance();
         if (esportsPatch >= 6)
         {
-            if (hypePatch > 9)
+            if (esportsPatch > 9)
             {
-                hypeScore += 2;
+                esportsScore += 2;
             }
             else
             {
-                hypeScore++;
+                esportsScore++;
             }
         }
-        else if (hypePatch < 5)
+        else if (esportsPatch < 5)
         {
-            if (hypePatch < 1)
+            if (esportsPatch < 1)
             {
-                hypeScore -= 2;
+                esportsScore -= 2;
             }
             else
             {
-                hypeScore--;
+                esportsScore--;
             }
         }
     }
