@@ -5,12 +5,19 @@ using UnityEngine;
 public class FeedbackCalculations : MonoBehaviour
 {
     public GameObject[] characters;
+<<<<<<< HEAD
     public GameObject playerStats;
+=======
+>>>>>>> dakota
 
     // Start is called before the first frame update
     void Start()
     {
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> dakota
     }
 
     // Update is called once per frame
@@ -133,6 +140,23 @@ public class FeedbackCalculations : MonoBehaviour
 
     public bool CheckBalance()
     {
+<<<<<<< HEAD
+=======
+        for (int i = 0; i < 5; i++)
+        {
+            for (int j = i+1; j < 5; j++)
+            {
+                // Do not compare matchup if character is the same.
+                if (i == j)
+                {
+                    continue;
+                }
+                // Get stats for each character
+                // Compare Stats; if one is greater, add point.
+            }
+        }
+        //NOTE: Create separate compare character function to test matchups that is called in checkbalance.
+>>>>>>> dakota
         return true;
     }
 }
