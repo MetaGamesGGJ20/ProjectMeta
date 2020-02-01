@@ -4,47 +4,15 @@ using UnityEngine;
 
 public class FeedbackCalculations : MonoBehaviour
 {
-    public GameObject[] characters;
-<<<<<<< HEAD
-    public GameObject playerStats;
-=======
->>>>>>> dakota
-
-    // Start is called before the first frame update
-    void Start()
-    {
-<<<<<<< HEAD
-        
-=======
-
->>>>>>> dakota
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void CalculateAll()
-    {
-        CalculateHype();
-        CalculateFun();
-        CheckArchetype();
-    }
-
+    public Character[] characters;
+    
     public int CalculateHype()
     {
         int patchHypeScore = 0;
 
         for(int i = 0; i < 5; i++)
         {
-            //load in from character stats
-            int charAttSpeed = 0;
-            int charMobiity = 0;
-            int charLuck = 0;
-
-            if ((charAttSpeed + charMobiity + charLuck) >= 10)
+            if ((characters[i].getAttackSpeed() + characters[i].getMobility() + characters[i].getLuck()) >= 10)
             {
                 patchHypeScore++;
             }
@@ -59,12 +27,8 @@ public class FeedbackCalculations : MonoBehaviour
 
         for(int i = 0; i < 5; i++)
         {
-            //load in from character stats
-            int charAttPower = 0;
-            int charRange = 0;
-            int charHealth = 0;
 
-            if ((charAttPower + charRange + charHealth) >= 10)
+            if ((characters[i].getAttackPower() + characters[i].getRange() + characters[i].getHealth()) >= 10)
             {
                 patchFunScore++;
             }
@@ -79,45 +43,32 @@ public class FeedbackCalculations : MonoBehaviour
 
         for (int i = 0; i < 5; i++)
         {
-            int attSpeed = 0;
-            int desiredAttSpeed = 0;
-            int attPower = 0;
-            int desiredAttPower = 0;
-            int range = 0;
-            int desiredRange = 0;
-            int health = 0;
-            int desiredHealth = 0;
-            int mobility = 0;
-            int desiredMobility = 0;
-            int luck = 0;
-            int desiredLuck = 0;
-
-            if(attSpeed == desiredAttSpeed)
+            if(characters[i].getAttackSpeed() == characters[i].desiredAttackSpeed)
             {
                 patchBossScore++;
             }
 
-            if(attPower == desiredAttPower)
+            if (characters[i].getAttackPower() == characters[i].desiredAttackPower)
             {
                 patchBossScore++;
             }
 
-            if(range == desiredRange)
+            if (characters[i].getRange() == characters[i].desiredRange)
             {
                 patchBossScore++;
             }
 
-            if(health == desiredHealth)
+            if (characters[i].getHealth() == characters[i].desiredHealth)
             {
                 patchBossScore++;
             }
 
-            if(mobility == desiredMobility)
+            if (characters[i].getMobility() == characters[i].desiredMobility)
             {
                 patchBossScore++;
             }
 
-            if(luck == desiredLuck)
+            if (characters[i].getLuck() == characters[i].desiredLuck)
             {
                 patchBossScore++;
             }
@@ -140,8 +91,6 @@ public class FeedbackCalculations : MonoBehaviour
 
     public bool CheckBalance()
     {
-<<<<<<< HEAD
-=======
         for (int i = 0; i < 5; i++)
         {
             for (int j = i+1; j < 5; j++)
@@ -153,10 +102,10 @@ public class FeedbackCalculations : MonoBehaviour
                 }
                 // Get stats for each character
                 // Compare Stats; if one is greater, add point.
+                if()
             }
         }
         //NOTE: Create separate compare character function to test matchups that is called in checkbalance.
->>>>>>> dakota
         return true;
     }
 }
