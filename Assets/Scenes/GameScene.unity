@@ -4877,29 +4877,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossFeedbackList:
-  - boss0
-  - boss1
-  - boss2
-  - boss3
-  - boss4
+  - "Bal Chen is our headline fighter. He can\u2019t be too strong or too weak!"
+  - Lt. Sly is a fan favorite! He needs to be exciting! A glass cannon, for sure.
+  - "Our sponsor\u2019s character has fast, long distance attacks. Compensate with
+    low health and movement speed."
+  - Zhu Li is straight-forward - strong and bulky, but pretty slow.
+  - "Leiko isn\u2019t easy on beginners, but her attack speed and mobility are incredible."
   crowdFeedbackList:
-  - crowd0
-  - crowd1
-  - crowd2
-  - croud3
-  - crowd4
+  - "LET\u2019S GO SLY! LET\u2019S GO SLY! #slysquad"
+  - A faster fighting game is so much more fun to watch.
+  - The hypest games always involve some luck!!
+  - "Hit fast, move fast, that\u2019s what we wanna see!"
+  - WOMBO COMBO!!
   casualFeedbackList:
-  - casual0
-  - casual1
-  - casual2
-  - casual3
-  - casual4
+  - Still trying to get to grips with this game. Zhu Li looks cool - nice and strong.
+  - I got the game to play with my friends. I like characters with good attack power.
+  - "I tend to lose matches pretty quickly. If only I had more health\u2026"
+  - A better range helps me land my attacks better. Helps me learn the game more.
+  - Maybe I can get into this game. I like the characters with more obvious power
+    and range.
   esportsFeedbackList:
-  - esports0
-  - esports1
-  - esports2
-  - esports3
-  - esports4
+  - "I like matchups that feel close. They\u2019re the most satisfying."
+  - Dominating the other characters is alright, but not very deep.
+  - "Leiko\u2019s fast combo game appeals to me the most."
+  - I prefer consistency in my fighting games.
+  - More character variety in tournament is never a bad thing.
 --- !u!114 &344776991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12036,11 +12038,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: SuperPop
-  desiredAttackSpeed: 3
-  desiredAttackPower: 3
-  desiredHealth: 3
-  desiredRange: 3
-  desiredMobility: 3
+  desiredAttackSpeed: 5
+  desiredAttackPower: 5
+  desiredHealth: 2
+  desiredRange: 5
+  desiredMobility: 2
   desiredLuck: 3
   attributes:
   - Attack Speed
@@ -15425,12 +15427,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Leiko
-  desiredAttackSpeed: 3
-  desiredAttackPower: 3
+  desiredAttackSpeed: 5
+  desiredAttackPower: 2
   desiredHealth: 3
-  desiredRange: 3
-  desiredMobility: 3
-  desiredLuck: 3
+  desiredRange: 4
+  desiredMobility: 5
+  desiredLuck: 1
   attributes:
   - Attack Speed
   - Attack Power
@@ -24380,12 +24382,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Lt. Sly
-  desiredAttackSpeed: 3
-  desiredAttackPower: 3
-  desiredHealth: 3
-  desiredRange: 3
-  desiredMobility: 3
-  desiredLuck: 3
+  desiredAttackSpeed: 2
+  desiredAttackPower: 5
+  desiredHealth: 2
+  desiredRange: 2
+  desiredMobility: 5
+  desiredLuck: 5
   attributes:
   - Attack Speed
   - Attack Power
@@ -24584,12 +24586,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Zhu Li
-  desiredAttackSpeed: 3
-  desiredAttackPower: 3
-  desiredHealth: 3
+  desiredAttackSpeed: 1
+  desiredAttackPower: 5
+  desiredHealth: 5
   desiredRange: 3
-  desiredMobility: 3
-  desiredLuck: 3
+  desiredMobility: 1
+  desiredLuck: 2
   attributes:
   - Attack Speed
   - Attack Power
