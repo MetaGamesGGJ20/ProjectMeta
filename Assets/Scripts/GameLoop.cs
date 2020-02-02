@@ -13,8 +13,6 @@ public class GameLoop : MonoBehaviour
     private DisplayResults displayResults;
     private DisplayWinOrLose displayWinOrLose;
     public TextMeshProUGUI quarterText;
-    public AudioClip music;
-    public AudioSource source;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,12 +39,10 @@ public class GameLoop : MonoBehaviour
         {
             feedbackCalcs.characters[i].setRoundValues();
         }
-        source.Play();
     }
 
     public void roundEnd()
     {
-        source.Stop();
         playerStats.updateScores();
         deliverFeedback.updateFeedback();
         if (quarterNum < 4)
