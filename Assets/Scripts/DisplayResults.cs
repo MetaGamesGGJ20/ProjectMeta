@@ -38,7 +38,7 @@ public class DisplayResults : MonoBehaviour
         playerStats = GetComponent<PlayerStats>();
         deliverFeedback = GetComponent<DeliverFeedback>();
         quarterNum = 1;
-        StartCoroutine("ActivateResultsCanvas");
+        //StartCoroutine("ActivateResultsCanvas");
     }
 
     IEnumerator ActivateResultsCanvas()
