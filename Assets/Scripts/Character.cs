@@ -68,162 +68,162 @@ public class Character : MonoBehaviour
 
     public int getAttackSpeed()
     {
-        return attackSpeed;
+        return roundAS;
     }
 
     public int getAttackPower()
     {
-        return attackPower;
+        return roundAP;
     }
 
     public int getHealth()
     {
-        return health;
+        return roundH;
     }
 
     public int getRange()
     {
-        return range;
+        return roundR;
     }
 
     public int getMobility()
     {
-        return mobility;
+        return roundM;
     }
 
     public int getLuck()
     {
-        return luck;
+        return roundL;
     }
 
     public void incrementAttackSpeed()
     {
-        if (attackSpeed < 5)
+        if (roundAS < 5)
         {
-            attackSpeed++;
+            roundAS++;
         }
     }
 
     public void incrementAttackPower()
     {
-        if (attackPower < 5)
+        if (roundAP < 5)
         {
-            attackPower++;
+            roundAP++;
         }
     }
 
     public void incrementHealth()
     {
-        if (health < 5)
+        if (roundH < 5)
         {
-            health++;
+            roundH++;
         }
     }
 
     public void incrementRange()
     {
-        if (range < 5)
+        if (roundR < 5)
         {
-            range++;
+            roundR++;
         }
     }
 
     public void incrementMobility()
     {
-        if (mobility < 5)
+        if (roundM < 5)
         {
-            mobility++;
+            roundM++;
         }
     }
 
     public void incrementLuck()
     {
-        if (luck < 5)
+        if (roundL < 5)
         {
-            luck++;
+            roundL++;
         }
     }
 
     public void decrementAttackSpeed()
     {
-        if (attackSpeed > 1)
+        if (roundAS > 1)
         {
-            attackSpeed--;
+            roundAS--;
         }
     }
 
     public void decrementAttackPower()
     {
-        if (attackPower > 1)
+        if (roundAP > 1)
         {
-            attackPower--;
+            roundAP--;
         }
     }
 
     public void decrementHealth()
     {
-        if (health > 1)
+        if (roundH > 1)
         {
-            health--;
+            roundH--;
         }
     }
 
     public void decrementRange()
     {
-        if (range > 1)
+        if (roundR > 1)
         {
-            range--;
+            roundR--;
         }
     }
 
     public void decrementMobility()
     {
-        if (mobility > 1)
+        if (roundM > 1)
         {
-            mobility--;
+            roundM--;
         }
     }
 
     public void decrementLuck()
     {
-        if (luck > 1)
+        if (roundL > 1)
         {
-            luck--;
+            roundL--;
         }
     }
 
     public void setAttackSpeed(int stat)
     {
-        attackSpeed = stat;
+        roundAS = stat;
     }
 
     public void setAttackPower(int stat)
     {
-        attackPower = stat;
+        roundAP = stat;
     }
 
     public void setHealth(int stat)
     {
-        health = stat;
+        roundH = stat;
     }
 
     public void setRange(int stat)
     {
-        range = stat;
+        roundR = stat;
     }
 
     public void setMobility(int stat)
     {
-        mobility = stat;
+        roundM = stat;
     }
 
     public void setLuck(int stat)
     {
-        luck = stat;
+        roundL = stat;
     }
 
     public int getTotalScore()
     {
-        return (attackSpeed + attackPower + health + range + mobility + luck);
+        return (roundAS + roundAP + roundH + roundR + roundM + roundL);
     }
 }
