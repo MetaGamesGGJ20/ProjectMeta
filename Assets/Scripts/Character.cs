@@ -12,6 +12,8 @@ public class Character : MonoBehaviour
     public int desiredMobility = 3;
     public int desiredLuck = 3;
 
+    public string[] attributes = new string[] { "Attack Speed", "Attack Power", "Health", "Range", "Mobility", "Luck" };
+
     private int attackSpeed = 3;
     private int attackPower = 3;
     private int health = 3;

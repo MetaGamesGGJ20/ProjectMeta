@@ -23,13 +23,12 @@ public class DeliverFeedback : MonoBehaviour
 
     private void Start()
     {
-
         feedbackCalcs = GetComponent<FeedbackCalculations>();
     }
 
-    void updateFeedback()
+    public void updateFeedback()
     {
-
+        feedbackCalcs = GetComponent<FeedbackCalculations>();
         randomString = Random.Range(0, 4);
         bossFeedback = bossFeedbackList[randomString];
 
@@ -46,6 +45,7 @@ public class DeliverFeedback : MonoBehaviour
         feedbackCalcs.sponsorChar = Random.Range(0, 4);
         feedbackCalcs.sponsorProp = Random.Range(0, 5);
         feedbackCalcs.sponsorValue = Random.Range(1, 5);
+        sponsorFeedback = "Next quarter, make " + feedbackCalcs.characters[feedbackCalcs.sponsorChar].characterName + "'s " + feedbackCalcs.characters[feedbackCalcs.sponsorChar].attributes[feedbackCalcs.sponsorProp] + " the following value: " + feedbackCalcs.sponsorValue.ToString();
     }
 
     public string getBossFeedback()

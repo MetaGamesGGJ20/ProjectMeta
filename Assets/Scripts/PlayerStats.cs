@@ -128,4 +128,29 @@ public class PlayerStats : MonoBehaviour
             }
         }
     }
+
+    public int getBossScore()
+    {
+        return bossScore;
+    }
+
+    public int getHypeScore()
+    {
+        return hypeScore;
+    }
+
+    public int getSponsorScore()
+    {
+        return sponsorScore;
+    }
+
+    public int getFunScore()
+    {
+        return funScore;
+    }
+
+    public int getEsportsScore()
+    {
+        return esportsScore;
+    }
 }
