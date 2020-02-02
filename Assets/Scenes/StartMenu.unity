@@ -257,8 +257,9 @@ MonoBehaviour:
     patches for your fighting game by modifying character parameters. After each patch
     goes out, you will get feedback from different types of players and others associated
     with your game - the meta twist being that each character also represents one
-    of those archetypes. Balance the game and balance the needs of your players and
-    higher-ups, all at the same time.\r\n"
+    of those archetypes. \n\nYou will have four quarters to get everyone's satisfaction
+    to at least 4/5, or else you will be fired. Balance the game and balance the needs
+    of your players and higher-ups, all at the same time, and fix your broken game!!\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -286,8 +287,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -303,7 +304,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 135
+  m_firstOverflowCharacterIndex: 162
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -327,12 +328,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 85095952}
-    characterCount: 815
+    characterCount: 946
     spriteCount: 0
-    spaceCount: 142
-    wordCount: 141
+    spaceCount: 168
+    wordCount: 166
     linkCount: 0
-    lineCount: 13
+    lineCount: 14
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
