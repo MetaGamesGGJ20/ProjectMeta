@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
-public class PatchButtons : MonoBehaviour{
-  public TextMeshPro budgetText;
+public class BudgetManagement : MonoBehaviour
+{
+  public TextMeshProUGUI budgetText;
 
   private int patchBudget = 50000;
   public int currentBudget = 50000;
@@ -26,7 +26,7 @@ public class PatchButtons : MonoBehaviour{
     }
 
     void updateCounterGUI(){
-      budgetText.text = "$: " + currentBudget.ToString();
+      budgetText.text = "$: " + currentBudget.ToString("00,000");
     }
 
     public void useBudget()
