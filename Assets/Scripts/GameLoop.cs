@@ -48,6 +48,10 @@ public class GameLoop : MonoBehaviour
     {
         playerStats.updateScores();
         deliverFeedback.updateFeedback();
+        for (int i = 0; i < 5; i++)
+        {
+            feedbackCalcs.characters[i].updateCharValues();
+        }
         if (quarterNum < 4)
         {
             StartCoroutine(displayResults.ActivateResultsCanvas());
