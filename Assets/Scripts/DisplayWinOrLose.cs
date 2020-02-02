@@ -38,14 +38,7 @@ public class DisplayWinOrLose : MonoBehaviour
 
     public IEnumerator ActivateResultsCanvas()
     {
-        if (playerStats.getBossScore() >= 3 && playerStats.getSponsorScore() >= 3 && playerStats.getHypeScore() >= 3 && playerStats.getEsportsScore() >= 3 && playerStats.getFunScore() >= 3)
-        {
-            winLoseText.text = "You Fixed Your Fighting Game!";
-        }
-        else
-        {
-            winLoseText.text = "Your game is still broken. You're Fired!";
-        }
+        winLoseText.text = "Final Results";
         resultsCanvas.SetActive(true);
         source.PlayOneShot(fanfare);
         yield return new WaitForSeconds(2f);
