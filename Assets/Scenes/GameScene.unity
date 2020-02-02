@@ -3503,7 +3503,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7790d0f479b3d344a8fb9ac607323718, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -5699,6 +5699,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quarterText: {fileID: 452207569}
+  music: {fileID: 8300000, guid: 7790d0f479b3d344a8fb9ac607323718, type: 3}
+  source: {fileID: 263548629}
 --- !u!114 &344776997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24028,7 +24030,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 40, y: -0.9999981}
+  m_AnchoredPosition: {x: 40, y: -1}
   m_SizeDelta: {x: 160, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1825729630
