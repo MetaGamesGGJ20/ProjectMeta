@@ -11,6 +11,11 @@ public class DeliverFeedback : MonoBehaviour
     private string esportsFeedback;
     private int randomString;
 
+    private int prevBoss;
+    private int prevCrowd;
+    private int prevCasual;
+    private int prevEsports;
+
     private string randChar;
     private int randAttribute;
     private int randScore;
@@ -25,21 +30,42 @@ public class DeliverFeedback : MonoBehaviour
     {
         feedbackCalcs = GetComponent<FeedbackCalculations>();
 
-        updateFeedback();    }
+        prevBoss = 5;
+        prevCrowd = 5;
+        prevCasual = 5;
+        prevEsports = 5;
+        updateFeedback();
+    }
 
     public void updateFeedback()
     {
         feedbackCalcs = GetComponent<FeedbackCalculations>();
-        randomString = Random.Range(0, 4);
+        while(randomString != prevBoss)
+        {
+            randomString = Random.Range(0, 4);
+        }
+        prevBoss = randomString;
         bossFeedback = bossFeedbackList[randomString];
 
-        randomString = Random.Range(0, 4);
+        while (randomString != prevCrowd)
+        {
+            randomString = Random.Range(0, 4);
+        }
+        prevCrowd = randomString;
         crowdFeedback = crowdFeedbackList[randomString];
 
-        randomString = Random.Range(0, 4);
+        while (randomString != prevCasual)
+        {
+            randomString = Random.Range(0, 4);
+        }
+        prevCasual = randomString;
         casualFeedback = casualFeedbackList[randomString];
 
-        randomString = Random.Range(0, 4);
+        while (randomString != prevEsports)
+        {
+            randomString = Random.Range(0, 4);
+        }
+        prevEsports = randomString;
         esportsFeedback = esportsFeedbackList[randomString];
 
         //Calculate Sponsor requests
