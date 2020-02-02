@@ -24,7 +24,6 @@ public class DeliverFeedback : MonoBehaviour
     private void Start()
     {
         feedbackCalcs = GetComponent<FeedbackCalculations>();
-
         updateFeedback();
     }
 
