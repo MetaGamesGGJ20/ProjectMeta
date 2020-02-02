@@ -29014,7 +29014,7 @@ MonoBehaviour:
   desiredHealth: 5
   desiredRange: 3
   desiredMobility: 1
-  desiredLuck: 2
+  desiredLuck: 3
   attributes:
   - Attack Speed
   - Attack Power
