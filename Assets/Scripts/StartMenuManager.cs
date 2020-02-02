@@ -10,11 +10,14 @@ public class StartMenuManager : MonoBehaviour {
   public Button startButton;
   public Button settingsButton;
   public Button exitButton;
+  public Button creditsButton;
   public Button backButton;
+    public Button backButton2;
 
   // references to Submenus
   public GameObject mainMenu;
   public GameObject settingsMenu;
+    public GameObject creditsMenu;
 
   public AudioMixer audioMixer;
 
@@ -36,8 +39,16 @@ public class StartMenuManager : MonoBehaviour {
     settingsButton.onClick.RemoveAllListeners();
     settingsButton.onClick.AddListener(() => ShowMenu("Settings"));
 
-    // setup the listener to Show the main menu screen when clicked
-    backButton.onClick.RemoveAllListeners();
+        // setup the listener to Show settings Screen when clicked
+        creditsButton.onClick.RemoveAllListeners();
+        creditsButton.onClick.AddListener(() => ShowMenu("Credits"));
+
+        // setup the listener to Show the main menu screen when clicked
+        backButton2.onClick.RemoveAllListeners();
+        backButton2.onClick.AddListener(() => ShowMenu("Main"));
+
+        // setup the listener to Show the main menu screen when clicked
+        backButton.onClick.RemoveAllListeners();
     backButton.onClick.AddListener(() => ShowMenu("Main"));
 
     // setup the listener to exit the game;
@@ -50,20 +61,24 @@ public class StartMenuManager : MonoBehaviour {
     // all menus off by default until selected
     mainMenu.SetActive(false);
     settingsMenu.SetActive(false);
+    creditsMenu.SetActive(false);
 
-    // switches to menu that is selected
-    switch(menuName){
+        // switches to menu that is selected
+        switch (menuName){
       case "Main":
         mainMenu.SetActive(true);
         break;
       case "Settings":
         settingsMenu.SetActive(true);
         break;
-    }
+      case "Credits":
+                creditsMenu.SetActive(true);
+                break;
+        }
   }
 
-  // Starts game, with fade to black effect
-  public void StartGame(){
+    // Starts game, with fade to black effect
+    public void StartGame(){
     fadeOut.SetActive(true); // initially set to false to avoid blocking raycast to start menu buttons
     fadeOut.GetComponent<FadeOutEvent>().StartFade();
     StartCoroutine(LoadGameWithFade());
