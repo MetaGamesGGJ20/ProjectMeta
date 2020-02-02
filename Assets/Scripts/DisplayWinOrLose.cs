@@ -38,7 +38,7 @@ public class DisplayWinOrLose : MonoBehaviour
 
     public IEnumerator ActivateResultsCanvas()
     {
-        if (playerStats.getBossScore() >= 4 && playerStats.getSponsorScore() >= 4 && playerStats.getHypeScore() >= 4 && playerStats.getEsportsScore() >= 4 && playerStats.getFunScore() >= 4)
+        if (playerStats.getBossScore() >= 3 && playerStats.getSponsorScore() >= 3 && playerStats.getHypeScore() >= 3 && playerStats.getEsportsScore() >= 3 && playerStats.getFunScore() >= 3)
         {
             winLoseText.text = "You Fixed Your Fighting Game!";
         }
