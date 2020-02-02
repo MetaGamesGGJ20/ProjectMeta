@@ -67,7 +67,7 @@ public class DeliverFeedback : MonoBehaviour
     {
         return casualFeedback;
     }
-    '
+
     public string getEsportsFeedback()
     {
         return esportsFeedback;

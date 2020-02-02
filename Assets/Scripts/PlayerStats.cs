@@ -36,7 +36,7 @@ public class PlayerStats : MonoBehaviour
     public void updateScores()
     {
         hypePatch = feedbackCalcs.CalculateHype();
-        // Award Hype Score
+        // Award Score
         if (hypePatch >= 3)
         {
             if (hypePatch == 5)
@@ -65,22 +65,22 @@ public class PlayerStats : MonoBehaviour
         {
             if (funPatch == 5)
             {
-                funPatch += 2;
+                funScore += 2;
             }
             else
             {
-                funPatch++;
+                funScore++;
             }
         }
         else if (funPatch < 3)
         {
             if (funPatch == 0)
             {
-                funPatch -= 2;
+                funScore -= 2;
             }
             else
             {
-                funPatch--;
+                funScore--;
             }
         }
 
