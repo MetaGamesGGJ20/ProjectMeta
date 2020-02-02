@@ -66,6 +66,102 @@ public class Character : MonoBehaviour
         return luck;
     }
 
+    public void incrementAttackSpeed()
+    {
+        if (attackSpeed < 5)
+        {
+            attackSpeed++;
+        }
+    }
+
+    public void incrementAttackPower()
+    {
+        if (attackPower < 5)
+        {
+            attackPower++;
+        }
+    }
+
+    public void incrementHealth()
+    {
+        if (health < 5)
+        {
+            health++;
+        }
+    }
+
+    public void incrementRange()
+    {
+        if (range < 5)
+        {
+            range++;
+        }
+    }
+
+    public void incrementMobility()
+    {
+        if (mobility < 5)
+        {
+            mobility++;
+        }
+    }
+
+    public void incrementLuck()
+    {
+        if (luck < 5)
+        {
+            luck++;
+        }
+    }
+
+    public void decrementAttackSpeed()
+    {
+        if (attackSpeed > 1)
+        {
+            attackSpeed--;
+        }
+    }
+
+    public void decrementAttackPower()
+    {
+        if (attackPower > 1)
+        {
+            attackPower--;
+        }
+    }
+
+    public void decrementHealth()
+    {
+        if (health > 1)
+        {
+            health--;
+        }
+    }
+
+    public void decrementRange()
+    {
+        if (range > 1)
+        {
+            range--;
+        }
+    }
+
+    public void decrementMobility()
+    {
+        if (mobility > 1)
+        {
+            mobility--;
+        }
+    }
+
+    public void decrementLuck()
+    {
+        if (luck > 1)
+        {
+            luck--;
+        }
+    }
+
     public void setAttackSpeed(int stat)
     {
         attackSpeed = stat;
