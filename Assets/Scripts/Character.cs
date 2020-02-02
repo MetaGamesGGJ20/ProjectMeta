@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+    public BudgetManagement budget;
+
     public string characterName;
     public int desiredAttackSpeed = 3;
     public int desiredAttackPower = 3;
@@ -98,7 +100,7 @@ public class Character : MonoBehaviour
 
     public void incrementAttackSpeed()
     {
-        if (roundAS < 5)
+        if (roundAS < 5 && budget.currentBudget > 0)
         {
             roundAS++;
         }
@@ -106,7 +108,7 @@ public class Character : MonoBehaviour
 
     public void incrementAttackPower()
     {
-        if (roundAP < 5)
+        if (roundAP < 5 && budget.currentBudget > 0)
         {
             roundAP++;
         }
@@ -114,7 +116,7 @@ public class Character : MonoBehaviour
 
     public void incrementHealth()
     {
-        if (roundH < 5)
+        if (roundH < 5 && budget.currentBudget > 0)
         {
             roundH++;
         }
@@ -122,7 +124,7 @@ public class Character : MonoBehaviour
 
     public void incrementRange()
     {
-        if (roundR < 5)
+        if (roundR < 5 && budget.currentBudget > 0)
         {
             roundR++;
         }
@@ -130,7 +132,7 @@ public class Character : MonoBehaviour
 
     public void incrementMobility()
     {
-        if (roundM < 5)
+        if (roundM < 5 && budget.currentBudget > 0)
         {
             roundM++;
         }
@@ -138,7 +140,7 @@ public class Character : MonoBehaviour
 
     public void incrementLuck()
     {
-        if (roundL < 5)
+        if (roundL < 5 && budget.currentBudget > 0)
         {
             roundL++;
         }
@@ -146,7 +148,7 @@ public class Character : MonoBehaviour
 
     public void decrementAttackSpeed()
     {
-        if (roundAS > 1)
+        if (roundAS > 1 && budget.currentBudget > 0)
         {
             roundAS--;
         }
@@ -154,7 +156,7 @@ public class Character : MonoBehaviour
 
     public void decrementAttackPower()
     {
-        if (roundAP > 1)
+        if (roundAP > 1 && budget.currentBudget > 0)
         {
             roundAP--;
         }
@@ -162,7 +164,7 @@ public class Character : MonoBehaviour
 
     public void decrementHealth()
     {
-        if (roundH > 1)
+        if (roundH > 1 && budget.currentBudget > 0)
         {
             roundH--;
         }
@@ -170,7 +172,7 @@ public class Character : MonoBehaviour
 
     public void decrementRange()
     {
-        if (roundR > 1)
+        if (roundR > 1 && budget.currentBudget > 0)
         {
             roundR--;
         }
@@ -178,7 +180,7 @@ public class Character : MonoBehaviour
 
     public void decrementMobility()
     {
-        if (roundM > 1)
+        if (roundM > 1 && budget.currentBudget > 0)
         {
             roundM--;
         }
@@ -186,7 +188,7 @@ public class Character : MonoBehaviour
 
     public void decrementLuck()
     {
-        if (roundL > 1)
+        if (roundL > 1 && budget.currentBudget > 0)
         {
             roundL--;
         }
