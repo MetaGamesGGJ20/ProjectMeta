@@ -21,9 +21,17 @@ public class Character : MonoBehaviour
     private int mobility = 3;
     private int luck = 3;
 
+    private int roundAS;
+    private int roundAP;
+    private int roundH;
+    private int roundR;
+    private int roundM;
+    private int roundL;
+
     private void Start()
     {
         randomizeStartValues();
+        setRoundValues();
     }
 
     private void randomizeStartValues()
@@ -34,6 +42,16 @@ public class Character : MonoBehaviour
         range = Random.Range(1, 5);
         mobility = Random.Range(1, 5);
         luck = Random.Range(1, 5);
+    }
+
+    public void setRoundValues()
+    {
+        roundAS = attackSpeed;
+        roundAP = attackPower;
+        roundH = health;
+        roundR = range;
+        roundM = mobility;
+        roundL = luck;
     }
 
     public int getAttackSpeed()
