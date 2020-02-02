@@ -44,6 +44,7 @@ public class Character : MonoBehaviour
         luck = Random.Range(1, 5);
     }
 
+    //called to reverse changes
     public void setRoundValues()
     {
         roundAS = attackSpeed;
@@ -52,6 +53,17 @@ public class Character : MonoBehaviour
         roundR = range;
         roundM = mobility;
         roundL = luck;
+    }
+
+    //called after each round
+    public void updateCharValues()
+    {
+        attackSpeed = roundAS;
+        attackPower = roundAP;
+        health = roundH;
+        range = roundR;
+        mobility = roundM;
+        luck = roundL;
     }
 
     public int getAttackSpeed()

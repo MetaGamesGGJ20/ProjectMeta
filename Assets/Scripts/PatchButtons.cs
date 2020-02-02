@@ -5,30 +5,38 @@ using UnityEngine.UI;
 using TMPro;
 
 public class PatchButtons : MonoBehaviour{
-  public TextMeshPro counter;
+  public TextMeshPro budgetText;
 
-  public int budget = 50000;
+  private int patchBudget = 50000;
+  public int currentBudget = 50000;
   public int decrementValue = 5000;
 
     void Awake(){
-      if(counter==null){
+      if(budgetText==null){
         Debug.LogError("Please attatched counter text object.");
       }
     }
 
     void Update(){
-      if(budget==0){
+      if(currentBudget == 0)
+      {
         endRound();
       }
       updateCounterGUI();
     }
 
     void updateCounterGUI(){
-      counter.text = budget.ToString();
+      budgetText.text = "$: " + currentBudget.ToString();
     }
 
-    public void useBudget(){
-      budget = budget - decrementValue;
+    public void useBudget()
+    {
+        currentBudget -= decrementValue;
+    }
+
+    public void ResetBudget()
+    {
+        currentBudget = patchBudget;
     }
 
     void endRound(){
