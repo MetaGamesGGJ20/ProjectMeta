@@ -31,21 +31,19 @@ public class DisplayResults : MonoBehaviour
     public GameObject statistics;
     public GameObject buttonCanvas;
 
-    private int quarterNum;
+    private GameLoop gameLoop;
 
     private void Start()
     {
         playerStats = GetComponent<PlayerStats>();
         deliverFeedback = GetComponent<DeliverFeedback>();
-        quarterNum = 1;
+        gameLoop = GetComponent<GameLoop>();
         //StartCoroutine("ActivateResultsCanvas");
     }
 
-    IEnumerator ActivateResultsCanvas()
+    public IEnumerator ActivateResultsCanvas()
     {
-        playerStats.updateScores();
-        deliverFeedback.updateFeedback();
-        quarterText.text = "Quarter " + quarterNum.ToString() + " Completed!";
+        quarterText.text = "Quarter " + gameLoop.getQuarterNum().ToString() + " Completed!";
         resultsCanvas.SetActive(true);
         source.PlayOneShot(fanfare);
         yield return new WaitForSeconds(2f);
@@ -73,10 +71,10 @@ public class DisplayResults : MonoBehaviour
 
     public void backToGame()
     {
-        quarterNum++;
         resultsCanvas.SetActive(false);
         statistics.SetActive(false);
         buttonCanvas.SetActive(false);
         //Start next round, or if quarter num is four go to final screen instead.
+        gameLoop.roundStart();
     }
 }

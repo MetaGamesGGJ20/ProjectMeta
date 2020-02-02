@@ -34,13 +34,10 @@ public class DisplayWinOrLose : MonoBehaviour
     {
         playerStats = GetComponent<PlayerStats>();
         deliverFeedback = GetComponent<DeliverFeedback>();
-        StartCoroutine("ActivateResultsCanvas");
     }
 
-    IEnumerator ActivateResultsCanvas()
+    public IEnumerator ActivateResultsCanvas()
     {
-        playerStats.updateScores();
-        deliverFeedback.updateFeedback();
         if (playerStats.getBossScore() >= 4 && playerStats.getSponsorScore() >= 4 && playerStats.getHypeScore() >= 4 && playerStats.getEsportsScore() >= 4 && playerStats.getFunScore() >= 4)
         {
             winLoseText.text = "You Fixed Your Fighting Game!";

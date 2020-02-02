@@ -60,6 +60,7 @@ public class PlayerStats : MonoBehaviour
                 hypeScore--;
             }
         }
+        hypeScore = checkScore(hypeScore);
 
         funPatch = feedbackCalcs.CalculateFun();
         if (funPatch >= 3)
@@ -84,6 +85,8 @@ public class PlayerStats : MonoBehaviour
                 funScore--;
             }
         }
+        funScore = checkScore(funScore);
+
 
         bossPatch = feedbackCalcs.CheckArchetype();
         if (bossPatch)
@@ -94,6 +97,7 @@ public class PlayerStats : MonoBehaviour
         {
             bossScore--;
         }
+        bossScore = checkScore(bossScore);
 
         sponsorPatch = feedbackCalcs.CheckSponsors();
         if (sponsorPatch)
@@ -104,6 +108,7 @@ public class PlayerStats : MonoBehaviour
         {
             sponsorScore--;
         }
+        sponsorScore = checkScore(sponsorScore);
 
         esportsPatch = feedbackCalcs.CheckBalance();
         if (esportsPatch >= 6)
@@ -128,6 +133,7 @@ public class PlayerStats : MonoBehaviour
                 esportsScore--;
             }
         }
+        esportsScore = checkScore(esportsScore);
     }
 
     public int getBossScore()
@@ -153,5 +159,22 @@ public class PlayerStats : MonoBehaviour
     public int getEsportsScore()
     {
         return esportsScore;
+    }
+
+    public int checkScore(int stat)
+    {
+        if (stat > 5)
+        {
+            return 5;
+        }
+        else if (stat < 0)
+        {
+            return 0;
+        }
+        else
+        {
+            return stat;
+        }
+        
     }
 }
