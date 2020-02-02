@@ -1,7 +1,40 @@
 fileFormatVersion: 2
 guid: 6fd1f217995875148a9364d4dc451416
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7031077525563406620
+    second: falcon_idle
+  - first:
+      213: -1583379878634891596
+    second: falcon_windup_1
+  - first:
+      213: -4899973954867987328
+    second: falcon_windup_2
+  - first:
+      213: -1200721984695843070
+    second: falcon_windup_3
+  - first:
+      213: 8028074108863235895
+    second: falcon_punch_1
+  - first:
+      213: 3056752569304607463
+    second: falcon spritesheet_5
+  - first:
+      213: -913023340155230023
+    second: falcon_cooldown_1
+  - first:
+      213: 2196882260527371711
+    second: falcon_cooldown_2
+  - first:
+      213: 1141264990237514338
+    second: falcon_idle_2
+  - first:
+      213: -2705889284460480454
+    second: falcon_idle_3
+  - first:
+      213: 7139598008661512859
+    second: falcon_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +73,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +117,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: falcon_idle
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1104
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206ae7cc7abe3433180fa0a6aa19fe25
+      internalID: 7031077525563406620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: falcon_windup_1
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1104
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fcbb11b05fc14364b74dbbdbb2d7053
+      internalID: -1583379878634891596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: falcon_windup_2
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1104
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9df14b06a2e4b128d79b17f42a7f82
+      internalID: -4899973954867987328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: falcon_windup_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 736
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51cd247ed96bd48fb939521083d3ebb5
+      internalID: -1200721984695843070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: falcon_punch_1
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 736
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086843cbde9004808aadf32fb8bc19f3
+      internalID: 8028074108863235895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: falcon spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 736
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabccf57bda7a42c096f23a00c2c2a09
+      internalID: 3056752569304607463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: falcon_cooldown_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 368
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e13cb02d292540f3aa547959a58ae30
+      internalID: -913023340155230023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: falcon_cooldown_2
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 368
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b34c470d893429bbae0b95aa12a085
+      internalID: 2196882260527371711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: falcon_idle_2
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 368
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39863c6813044e9a89921b98c124989
+      internalID: 1141264990237514338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: falcon_idle_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4051926f2ea4b417fbe0bd5bb7dfaae6
+      internalID: -2705889284460480454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: falcon_4
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 0
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba133211da6364d14aefb1140b822efb
+      internalID: 7139598008661512859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

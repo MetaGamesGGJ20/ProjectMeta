@@ -1,7 +1,28 @@
 fileFormatVersion: 2
 guid: 823790a3beb75f5428fcaf0855676452
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -9135276319166841484
+    second: gogo_idle_1
+  - first:
+      213: 294569217886342256
+    second: gogo_idle_2
+  - first:
+      213: -6913357040715466747
+    second: gogo_windup_1
+  - first:
+      213: 4397374418225676758
+    second: gogo_slash_1
+  - first:
+      213: -8707740627402601433
+    second: gogo_cooldown_1
+  - first:
+      213: 2486683429446102386
+    second: gogo_idle_3
+  - first:
+      213: 2418543834969643221
+    second: gogo_idle_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +61,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +105,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: gogo_idle_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 736
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d888656b4594c10a40082975dad85f
+      internalID: -9135276319166841484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gogo_idle_2
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 736
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6cef9375e8f440b928174177d6b788
+      internalID: 294569217886342256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gogo_windup_1
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 736
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4399e25fe6e6747c4985b81f3f882859
+      internalID: -6913357040715466747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gogo_slash_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 368
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d001b33848ce046958a6ad05dfc257a7
+      internalID: 4397374418225676758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gogo_cooldown_1
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 368
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d141691d65ac84a52afbbdddff9e34a8
+      internalID: -8707740627402601433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gogo_idle_3
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 368
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921bbb3a653fe4adfb001d8746772b64
+      internalID: 2486683429446102386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gogo_idle_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe10258e7c2034a9a83ec18bf2a65ee3
+      internalID: 2418543834969643221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

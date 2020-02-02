@@ -1,7 +1,28 @@
 fileFormatVersion: 2
 guid: fc21082a79157e943a7416f5100f5550
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4425961508020090651
+    second: ryu_idle_1
+  - first:
+      213: -7045975621225118537
+    second: ryu_idle_2
+  - first:
+      213: -5414912776392005627
+    second: ryu_windup_1
+  - first:
+      213: -5414562413831219573
+    second: ryu_upair_1
+  - first:
+      213: 7259997097153761325
+    second: ryu_cooldown_1
+  - first:
+      213: -5882300400136191564
+    second: ryu_idle_3
+  - first:
+      213: -7655291677880327356
+    second: ryu_idle_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +61,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,9 +91,168 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ryu_idle_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 736
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc8bec2be3ea4a8bb5268219b436914
+      internalID: 4425961508020090651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ryu_idle_2
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 736
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c89010c8c15421ab86a08abf703c1b
+      internalID: -7045975621225118537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ryu_windup_1
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 736
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c04a628a9e5f47048dcf13ffb3ecc8a
+      internalID: -5414912776392005627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ryu_upair_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 368
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31830fceb394c436cb185362bbb20933
+      internalID: -5414562413831219573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ryu_cooldown_1
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 368
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5458f0c792384eb9a89fe98ea0a7f35
+      internalID: 7259997097153761325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ryu_idle_3
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 368
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3468c9ec422646dbb4f3faf2dea1eff
+      internalID: -5882300400136191564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ryu_idle_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce1b40a5956c47968a7f9b9815198fd
+      internalID: -7655291677880327356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -1,7 +1,43 @@
 fileFormatVersion: 2
 guid: 89775e2a8be78cf418a652c1dc715dc9
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7687945565811108014
+    second: jolyne_idle_1
+  - first:
+      213: 233699172150248118
+    second: jolyne_idle_2
+  - first:
+      213: 585937824359413572
+    second: jolyne_spin_1
+  - first:
+      213: -6245775079272358123
+    second: jolyne_spin_2
+  - first:
+      213: 80616583984498337
+    second: jolyne_spin_3
+  - first:
+      213: -1132366091250338914
+    second: jolyne_spin_4
+  - first:
+      213: -2234590046813100547
+    second: jolyne_spin_5
+  - first:
+      213: -8161265687074613679
+    second: jolyne_spin_6
+  - first:
+      213: -7126680222137295956
+    second: jolyne_spin_7
+  - first:
+      213: 2872489534651145993
+    second: jolyne_cooldown_1
+  - first:
+      213: -2901661437078922716
+    second: jolyne_idle_3
+  - first:
+      213: -3176416384642894050
+    second: jolyne_idle_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +76,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +120,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: jolyne_idle_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1104
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b414f3cc2e1c3412db11d8ef102c04a4
+      internalID: -7687945565811108014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jolyne_idle_2
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1104
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2615994a6ce954f29aebf4aa247df484
+      internalID: 233699172150248118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jolyne_spin_1
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1104
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64cf9d58f32a4f09b6f56a29513eb93
+      internalID: 585937824359413572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jolyne_spin_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 736
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34c59fdf8f744f0b96e88a907a3ea98
+      internalID: -6245775079272358123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jolyne_spin_3
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 736
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd50d1fac06b4d088efd11f2ba245e2
+      internalID: 80616583984498337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jolyne_spin_4
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 736
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573dd4da9611f467b9a099ccd2dd4245
+      internalID: -1132366091250338914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jolyne_spin_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 368
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c4390ae115f48daa6157c3175f0ea8
+      internalID: -2234590046813100547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jolyne_spin_6
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 368
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d255b0db8fe4992a3db33545a1d8c8
+      internalID: -8161265687074613679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jolyne_spin_7
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 368
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d98d88191b7f4cf9955df29d88d41da
+      internalID: -7126680222137295956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jolyne_cooldown_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25bf987cef2f40358d18642a6565c2e
+      internalID: 2872489534651145993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jolyne_idle_3
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 0
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f036bb17567d54e15b14c7bdfc170913
+      internalID: -2901661437078922716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jolyne_idle_4
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 368
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e407dc7424032431584607ef8c84f6c8
+      internalID: -3176416384642894050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
