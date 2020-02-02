@@ -103,6 +103,7 @@ public class Character : MonoBehaviour
         if (roundAS < 5 && budget.currentBudget > 0)
         {
             roundAS++;
+            budget.currentBudget -= budget.decrementValue;
         }
     }
 
@@ -111,6 +112,7 @@ public class Character : MonoBehaviour
         if (roundAP < 5 && budget.currentBudget > 0)
         {
             roundAP++;
+            budget.currentBudget -= budget.decrementValue;
         }
     }
 
@@ -119,6 +121,7 @@ public class Character : MonoBehaviour
         if (roundH < 5 && budget.currentBudget > 0)
         {
             roundH++;
+            budget.currentBudget -= budget.decrementValue;
         }
     }
 
@@ -127,6 +130,7 @@ public class Character : MonoBehaviour
         if (roundR < 5 && budget.currentBudget > 0)
         {
             roundR++;
+            budget.currentBudget -= budget.decrementValue;
         }
     }
 
@@ -135,6 +139,7 @@ public class Character : MonoBehaviour
         if (roundM < 5 && budget.currentBudget > 0)
         {
             roundM++;
+            budget.currentBudget -= budget.decrementValue;
         }
     }
 
@@ -143,6 +148,7 @@ public class Character : MonoBehaviour
         if (roundL < 5 && budget.currentBudget > 0)
         {
             roundL++;
+            budget.currentBudget -= budget.decrementValue;
         }
     }
 
@@ -151,6 +157,7 @@ public class Character : MonoBehaviour
         if (roundAS > 1 && budget.currentBudget > 0)
         {
             roundAS--;
+            budget.currentBudget -= budget.decrementValue;
         }
     }
 
@@ -159,6 +166,7 @@ public class Character : MonoBehaviour
         if (roundAP > 1 && budget.currentBudget > 0)
         {
             roundAP--;
+            budget.currentBudget -= budget.decrementValue;
         }
     }
 
@@ -167,6 +175,7 @@ public class Character : MonoBehaviour
         if (roundH > 1 && budget.currentBudget > 0)
         {
             roundH--;
+            budget.currentBudget -= budget.decrementValue;
         }
     }
 
@@ -175,6 +184,7 @@ public class Character : MonoBehaviour
         if (roundR > 1 && budget.currentBudget > 0)
         {
             roundR--;
+            budget.currentBudget -= budget.decrementValue;
         }
     }
 
@@ -183,6 +193,7 @@ public class Character : MonoBehaviour
         if (roundM > 1 && budget.currentBudget > 0)
         {
             roundM--;
+            budget.currentBudget -= budget.decrementValue;
         }
     }
 
@@ -191,6 +202,7 @@ public class Character : MonoBehaviour
         if (roundL > 1 && budget.currentBudget > 0)
         {
             roundL--;
+            budget.currentBudget -= budget.decrementValue;
         }
     }
 
