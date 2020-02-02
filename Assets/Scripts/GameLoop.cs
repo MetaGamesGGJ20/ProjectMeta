@@ -13,6 +13,7 @@ public class GameLoop : MonoBehaviour
     private DisplayResults displayResults;
     private DisplayWinOrLose displayWinOrLose;
     public TextMeshProUGUI quarterText;
+    private BudgetManagement budget;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class GameLoop : MonoBehaviour
         deliverFeedback = GetComponent<DeliverFeedback>();
         displayResults = GetComponent<DisplayResults>();
         displayWinOrLose = GetComponent<DisplayWinOrLose>();
+        budget = GetComponent<BudgetManagement>();
         deliverFeedback.updateFeedback();
         quarterNum = 0;
         roundStart();
@@ -33,6 +35,7 @@ public class GameLoop : MonoBehaviour
 
     public void roundStart()
     {
+        budget.ResetBudget();
         quarterNum++;
         quarterText.text = "Quarter " + quarterNum.ToString();
         for(int i = 0; i < 5; i++)
