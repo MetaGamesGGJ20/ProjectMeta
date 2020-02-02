@@ -43,12 +43,12 @@ public class DisplayResults : MonoBehaviour
 
     IEnumerator ActivateResultsCanvas()
     {
-        //playerStats.updateScores()
+        playerStats.updateScores();
         deliverFeedback.updateFeedback();
         quarterText.text = "Quarter " + quarterNum.ToString() + " Completed!";
         resultsCanvas.SetActive(true);
         source.PlayOneShot(fanfare);
-        yield return new WaitForSeconds(1.8f);
+        yield return new WaitForSeconds(2f);
 
         bossHappiness.text = "Boss Happiness: " + playerStats.getBossScore().ToString() + "/5";
         BossFeedback.text = deliverFeedback.getBossFeedback();
@@ -66,7 +66,7 @@ public class DisplayResults : MonoBehaviour
         casualFeedback.text = deliverFeedback.getCasualFeedback();
 
         statistics.SetActive(true);
-        yield return new WaitForSeconds(2.75f);
+        yield return new WaitForSeconds(2.55f);
         buttonCanvas.SetActive(true);
 
     }

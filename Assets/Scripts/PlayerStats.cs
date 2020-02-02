@@ -35,6 +35,7 @@ public class PlayerStats : MonoBehaviour
 
     public void updateScores()
     {
+        feedbackCalcs = GetComponent<FeedbackCalculations>();
         hypePatch = feedbackCalcs.CalculateHype();
         // Award Score
         if (hypePatch >= 3)
