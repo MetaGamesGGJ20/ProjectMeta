@@ -16,7 +16,7 @@ public class FeedbackCalculations : MonoBehaviour
 
         for(int i = 0; i < 5; i++)
         {
-            if ((characters[i].getAttackSpeed() + characters[i].getMobility() + characters[i].getLuck()) >= 10)
+            if ((characters[i].getAttackSpeed() + characters[i].getMobility() + characters[i].getLuck()) >= 8)
             {
                 patchHypeScore++;
             }
@@ -31,7 +31,7 @@ public class FeedbackCalculations : MonoBehaviour
 
         for(int i = 0; i < 5; i++)
         {
-            if ((characters[i].getAttackPower() + characters[i].getRange() + characters[i].getHealth()) >= 10)
+            if ((characters[i].getAttackPower() + characters[i].getRange() + characters[i].getHealth()) >= 8)
             {
                 patchFunScore++;
             }
@@ -77,7 +77,7 @@ public class FeedbackCalculations : MonoBehaviour
             }
         }
 
-        if(patchBossScore >= 20)
+        if(patchBossScore >= 15)
         {
             return true;
         }
