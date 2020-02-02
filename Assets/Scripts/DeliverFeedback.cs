@@ -48,5 +48,30 @@ public class DeliverFeedback : MonoBehaviour
 
     }
 
+    public string getBossFeedback()
+    {
+        return bossFeedback;
+    }
+
+    public string getCrowdFeedback()
+    {
+        return crowdFeedback;
+    }
+
+    public string getSponsorFeedback()
+    {
+        return sponsorFeedback;
+    }
+
+    public string getCasualFeedback()
+    {
+        return casualFeedback;
+    }
+    '
+    public string getEsportsFeedback()
+    {
+        return esportsFeedback;
+    }
+
     //Update UI
 }
