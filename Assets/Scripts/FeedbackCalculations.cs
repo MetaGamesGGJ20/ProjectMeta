@@ -91,14 +91,14 @@ public class FeedbackCalculations : MonoBehaviour
     {
         if(sponsorProp == 0)
         {
-            if(characters[sponsorChar].getAttackPower() == sponsorValue)
+            if(characters[sponsorChar].getAttackSpeed() == sponsorValue)
             {
                 return true;
             }
         }
         else if (sponsorProp == 1)
         {
-            if (characters[sponsorChar].getAttackSpeed() == sponsorValue)
+            if (characters[sponsorChar].getAttackPower() == sponsorValue)
             {
                 return true;
             }
@@ -112,14 +112,14 @@ public class FeedbackCalculations : MonoBehaviour
         }
         else if (sponsorProp == 3)
         {
-            if (characters[sponsorChar].getMobility() == sponsorValue)
+            if (characters[sponsorChar].getRange() == sponsorValue)
             {
                 return true;
             }
         }
         else if (sponsorProp == 4)
         {
-            if (characters[sponsorChar].getRange() == sponsorValue)
+            if (characters[sponsorChar].getMobility() == sponsorValue)
             {
                 return true;
             }
