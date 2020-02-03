@@ -250,7 +250,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "You are a game developer working on a successful fighting game. There\u2019s
     just one problem - the game\u2019s fighters are imbalanced! Different fans want
-    different things from this balace, not to mention your boss and the game's esports
+    different things from this balance, not to mention your boss and the game's esports
     Sponsor, Pop-Aid! The scene is split on the game, and it\u2019s your job to fix
     it!\r\n\r\nYou will create balance patches for your fighting game by modifying
     character stats. You will get feedback from your different constituents about
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 182
+  m_firstOverflowCharacterIndex: 183
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 85095952}
-    characterCount: 932
+    characterCount: 933
     spriteCount: 0
     spaceCount: 155
     wordCount: 153
