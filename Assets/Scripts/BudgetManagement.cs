@@ -7,8 +7,8 @@ public class BudgetManagement : MonoBehaviour
 {
   public TextMeshProUGUI budgetText;
 
-  private int patchBudget = 250000;
-  public int currentBudget = 250000;
+  private int patchBudget = 200000;
+  public int currentBudget = 200000;
   public int decrementValue = 5000;
 
     void Awake(){
